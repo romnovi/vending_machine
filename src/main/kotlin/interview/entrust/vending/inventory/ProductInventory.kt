@@ -1,4 +1,6 @@
-package interview.entrust.vending
+package interview.entrust.vending.inventory
+
+import interview.entrust.vending.domain.Product
 
 class ProductInventory(initialStock: Map<Product, Int> = emptyMap()) {
     private val stock: MutableMap<Product, Int> = initialStock.toMutableMap()

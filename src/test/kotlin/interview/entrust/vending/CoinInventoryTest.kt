@@ -1,5 +1,7 @@
 package interview.entrust.vending
 
+import interview.entrust.vending.domain.Coin
+import interview.entrust.vending.inventory.CoinInventory
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows

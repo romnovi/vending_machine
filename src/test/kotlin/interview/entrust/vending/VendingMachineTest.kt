@@ -1,5 +1,7 @@
 package interview.entrust.vending
 
+import interview.entrust.vending.domain.Coin
+import interview.entrust.vending.domain.Product
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertIs

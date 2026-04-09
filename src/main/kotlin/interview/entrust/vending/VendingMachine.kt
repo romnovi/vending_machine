@@ -1,14 +1,12 @@
 package interview.entrust.vending
 
+import interview.entrust.vending.domain.Coin
+import interview.entrust.vending.domain.InsertResult
+import interview.entrust.vending.domain.Product
+import interview.entrust.vending.domain.SelectResult
+import interview.entrust.vending.inventory.CoinInventory
+import interview.entrust.vending.inventory.ProductInventory
 
-sealed class SelectResult {
-    data class Success(val product: Product, val change: List<Coin>) : SelectResult()
-    data class InsufficientFunds(val shortfallPence: Int) : SelectResult()
-    data class CannotMakeChange(val refund: List<Coin>) : SelectResult()
-    object ProductNotFound : SelectResult()
-    object OutOfStock : SelectResult()
-    object PriceNotFound : SelectResult()
-}
 
 class VendingMachine(
     initialCoins: Map<Coin, Int> = emptyMap(),

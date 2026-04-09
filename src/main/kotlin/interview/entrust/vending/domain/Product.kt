@@ -1,4 +1,4 @@
-package interview.entrust.vending
+package interview.entrust.vending.domain
 
 data class Product(val code: String, val name: String) {
     companion object {

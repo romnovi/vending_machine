@@ -1,5 +1,6 @@
-package interview.entrust.vending
+package interview.entrust.vending.inventory
 
+import interview.entrust.vending.domain.Coin
 import java.util.TreeMap
 
 class CoinInventory(initialStock: Map<Coin, Int> = emptyMap()) {
